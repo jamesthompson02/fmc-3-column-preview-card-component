@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-grey: hsl(0, 0%, 95%);
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height:100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card-1 {
+    height: 400px;
+    width: 220px;
+    background-color: var(--bright-orange);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+}
+#card-2 {
+    height: 400px;
+    width: 220px;
+    background-color: var(--dark-cyan);
+    padding: 15px;
+}
+#card-3 {
+    height: 400px;
+    width: 220px;
+    background-color: var(--very-dark-cyan);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px;
+}
+.image {
+    width: 90%;
+    transform: translateY(20px);
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.header {
+    width: 90%;
+    margin-left: 15px;
+    transform: translateY(50px);
+    font-family: 'Big Shoulders Display';
+    font-size: 35px;
+    color: var(--light-grey);
+    font-weight: 700;
+}
+.text {
+    width: 90%;
+    margin-left: 15px;
+    transform: translateY(80px);
+    font-family: 'Lexend Deca';
+    color: var(--transparent-white);
+    font-size: 14px;
+}
+.learn-more {
+    width:120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 15px;
+    transform: translateY(150px);
+    border: none;
+    background-color: var(--light-grey);
+    font-family: 'Lexend Deca';
+}
+#card-1 button {
+    color: var(--bright-orange);
+}
+#card-2 button {
+    color: var(--dark-cyan);
+}
+#card-3 button {
+    color: var(--very-dark-cyan);
+}
+#card-1 button:hover {
+    background-color: var(--bright-orange);
+    color: var(--light-grey);
+    border: 2px solid var(--light-grey);
+    cursor:pointer;
+}
+#card-2 button:hover {
+    background-color: var(--dark-cyan);
+    color: var(--light-grey);
+    border: 2px solid var(--light-grey);
+    cursor:pointer;
+}
+#card-3 button:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--light-grey);
+    border: 2px solid var(--light-grey);
+    cursor:pointer;
+    }    
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+        width: 100vw;
+        height:1500px;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: var(--light-grey);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+    #card-1 {
+        height: 400px;
+        width: 220px;
+        background-color: var(--bright-orange);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items:  flex-start;
+    }
+    .image {
+        width: 90%;
+        transform: translateY(20px);
+        display: block;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .header {
+        width: 90%;
+        margin-left: 15px;
+        transform: translateY(50px);
+        font-family: 'Big Shoulders Display';
+        font-size: 35px;
+        color: var(--light-grey);
+        font-weight: 700;
+    }
+    .text {
+        width: 90%;
+        margin-left: 15px;
+        transform: translateY(80px);
+        font-family: 'Lexend Deca';
+        color: var(--transparent-white);
+        font-size: 14px;
+    }
+    .learn-more {
+        width:120px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 15px;
+        transform: translateY(150px);
+        border: none;
+        background-color: var(--light-grey);
+        font-family: 'Lexend Deca';
+    }
+    #card-1 button {
+        color: var(--bright-orange);
+    }
+    #card-1 button:hover {
+        background-color: var(--bright-orange);
+        color: var(--light-grey);
+        border: 2px solid var(--light-grey);
+        cursor:pointer;
+    }
+    #card-2 {
+        height: 400px;
+        width: 220px;
+        background-color: var(--dark-cyan);
+        padding: 15px;
+    }
+    #card-2 button {
+        color: var(--dark-cyan);
+    }
+    #card-2 button:hover {
+        background-color: var(--dark-cyan);
+        color: var(--light-grey);
+        border: 2px solid var(--light-grey);
+        cursor:pointer;
+    }
+    #card-3 {
+        height: 400px;
+        width: 220px;
+        background-color: var(--very-dark-cyan);
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+        padding: 15px;
+    }
+    #card-3 button {
+        color: var(--very-dark-cyan);
+    }
+    #card-3 button:hover {
+        background-color: var(--very-dark-cyan);
+        color: var(--light-grey);
+        border: 2px solid var(--light-grey);
+        cursor:pointer;
+    }  
+}
